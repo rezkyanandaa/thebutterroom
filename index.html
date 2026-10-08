@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f0df">
+<meta name="description" content="The Butter Room — sweet things, baked beautifully.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>The Butter Room — Sweet things, baked beautifully.</title>
+</head>
+<body>
+<div class="announcement">Free delivery on orders above Rp150.000 · <span>WELCOME10</span> for 10% off your first order</div>
+
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="The Butter Room home">
+    <span class="brand-mark">TB</span>
+    <span><b>The Butter Room</b><small>sweet things, baked beautifully.</small></span>
+  </a>
+  <button class="menu-toggle" aria-label="Open menu">Menu</button>
+  <nav class="nav">
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#journal">Journal</a><a href="#contact">Contact</a>
+    <button class="bag-button" id="bagBtn" aria-label="Open shopping bag"><span>Bag</span><b id="bagCount">0</b></button>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">A little bakery in the city</p>
+    <h1>Sweet things,<br><em>baked beautifully.</em></h1>
+    <p>Handcrafted pastries, cakes, and little treats made fresh for your sweetest moments.</p>
+    <div class="hero-actions"><a class="btn dark" href="#shop">Shop Our Bakes</a><a class="btn text" href="#shop">View Menu <span>↗</span></a></div>
+    <div class="hero-note"><span>✦</span> baked in small batches · made to be shared</div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=90" alt="Fresh golden bakery pastries" onerror="this.classList.add('img-fallback')">
+    <div class="image-caption"><span>Fresh from the oven</span><b>08.10.26</b></div>
+  </div>
+</section>
+
+<section class="intro-strip">
+  <span>Pastries</span><i>✦</i><span>Cakes</span><i>✦</i><span>Little treats</span><i>✦</i><span>Coffee</span><i>✦</i><span>Tea</span>
+</section>
+
+<section id="shop" class="shop section">
+  <div class="section-head">
+    <div><p class="eyebrow">The counter</p><h2>Shop our bakes</h2></div>
+    <p>Made in small batches, served fresh, and meant to disappear quickly.</p>
+  </div>
+  <div class="filters" id="mainFilters">
+    <button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Pastries">Pastries</button><button class="filter" data-filter="Cookies">Cookies</button><button class="filter" data-filter="Cakes">Cakes</button><button class="filter" data-filter="Tarts">Tarts</button><button class="filter" data-filter="Drinks">Drinks</button>
+  </div>
+  <div class="drink-filters" id="drinkFilters">
+    <button class="subfilter active" data-sub="All Drinks">All Drinks</button><button class="subfilter" data-sub="Coffee">Coffee</button><button class="subfilter" data-sub="Non-Coffee">Non-Coffee</button><button class="subfilter" data-sub="Tea">Tea</button>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="pairing section">
+  <div class="pairing-copy"><p class="eyebrow">For the perfect little break</p><h2>Something to sip with your sweet.</h2><p>Made to pair perfectly with every little treat.</p><a class="btn dark" href="#shop" data-drinks-link>Explore Drinks</a></div>
+  <div class="pairing-cards">
+    <div class="pair-card"><span>01</span><b>Butter Croissant +<br>Buttercream Latte</b><small>Rp66.000</small></div>
+    <div class="pair-card"><span>02</span><b>Chocolate Hazelnut Cookie +<br>Iced Vanilla Cloud</b><small>Rp70.000</small></div>
+    <div class="pair-card"><span>03</span><b>Strawberry Cream Tart +<br>Earl Grey Milk Tea</b><small>Rp83.000</small></div>
+  </div>
+</section>
+
+<section id="about" class="about section">
+  <div class="about-image"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=85" alt="Pastry being served" onerror="this.classList.add('img-fallback')"></div>
+  <div class="about-copy"><p class="eyebrow">Our little room</p><h2>Made slowly.<br><em>Shared gladly.</em></h2><p>The Butter Room is a boutique bakery for the little moments that deserve something warm, buttery, and beautiful. We make pastry and dessert in small batches, using quality ingredients and baking fresh throughout the day.</p><p>From an early-morning croissant to a cake shared around the table, everything is made with a little patience and a lot of care.</p><a href="#contact" class="text-link">Come say hello <span>→</span></a></div>
+</section>
+
+<section id="journal" class="journal section">
+  <div class="section-head"><div><p class="eyebrow">From our notebook</p><h2>The Butter Journal</h2></div><p>Little notes from behind the counter.</p></div>
+  <div class="journal-grid">
+    <article><span>01 · BAKING</span><h3>Why laminated pastry needs a little patience.</h3><p>Butter, temperature, folds, rest — the quiet rhythm behind a flaky morning.</p></article>
+    <article><span>02 · PAIRINGS</span><h3>The afternoon coffee + pastry ritual.</h3><p>A few combinations we keep coming back to, from buttery to chocolatey.</p></article>
+    <article><span>03 · INGREDIENTS</span><h3>A pantry built around good basics.</h3><p>Vanilla, brown butter, honey, citrus, chocolate and a little sea salt.</p></article>
+  </div>
+</section>
+
+<section class="promo"><div><p class="eyebrow">A little something sweet</p><h2>Free delivery on orders above <em>Rp150.000.</em></h2><p>First order? Use <b>WELCOME10</b> for 10% off, up to Rp25.000.</p></div><a class="btn light" href="#shop">Shop the counter</a></section>
+
+<section id="contact" class="contact section">
+  <div><p class="eyebrow">Come by</p><h2>Let’s make it a<br><em>sweet one.</em></h2></div>
+  <div class="contact-grid">
+    <div><span>Instagram</span><a href="https://instagram.com/" target="_blank">@thebutterroom</a></div>
+    <div><span>WhatsApp</span><a href="https://wa.me/6281234567890" target="_blank">+62 812 3456 7890</a></div>
+    <div><span>Email</span><a href="mailto:hello@thebutterroom.com">hello@thebutterroom.com</a></div>
+    <div><span>Store</span><p>South Jakarta, Indonesia</p></div>
+    <div><span>Opening hours</span><p>Mon–Sun · 08.00–20.00</p></div>
+  </div>
+</section>
+</main>
+
+<footer><span>© 2026 The Butter Room</span><span>sweet things, baked beautifully.</span></footer>
+
+<button class="floating-wa" id="waBtn" aria-label="Order via WhatsApp"><span>WhatsApp</span> ↗</button>
+
+<!-- Product modal -->
+<div class="modal" id="productModal" aria-hidden="true"><div class="modal-backdrop" data-close="product"></div><div class="modal-card product-modal">
+  <button class="close" data-close="product">×</button><div id="productModalContent"></div>
+</div></div>
+
+<!-- Bag drawer -->
+<div class="drawer" id="bagDrawer" aria-hidden="true"><div class="drawer-backdrop" data-close="bag"></div><aside class="drawer-panel">
+  <div class="drawer-head"><div><p class="eyebrow">Your little order</p><h2>Shopping bag</h2></div><button class="close" data-close="bag">×</button></div>
+  <div id="bagItems" class="bag-items"></div>
+  <div class="bag-footer">
+    <div class="delivery-choice"><label>Delivery</label><select id="deliveryType"><option value="jakarta">Jakarta — Rp15.000</option><option value="around">Area sekitar Jakarta — Rp20.000</option><option value="pickup">Pickup — Free</option></select></div>
+    <div class="promo-row"><input id="promoInput" placeholder="Promo code"><button id="promoBtn">Apply</button></div><p id="promoMessage" class="mini-message"></p>
+    <div class="totals"><div><span>Subtotal</span><b id="subtotal">Rp0</b></div><div><span>Delivery</span><b id="delivery">Rp0</b></div><div class="grand"><span>Grand total</span><b id="grandTotal">Rp0</b></div></div>
+    <div id="freeDelivery" class="free-note" hidden>You’ve unlocked FREE delivery!</div>
+    <button class="btn dark full" id="checkoutBtn">Checkout</button>
+  </div>
+</aside></div>
+
+<!-- Checkout -->
+<div class="modal" id="checkoutModal" aria-hidden="true"><div class="modal-backdrop" data-close="checkout"></div><div class="modal-card checkout-card">
+  <button class="close" data-close="checkout">×</button>
+  <div class="checkout-head"><p class="eyebrow">Almost there</p><h2>Your order</h2><p>Please place your order at least 1 day in advance for cakes and larger orders.</p></div>
+  <form id="checkoutForm">
+    <div class="form-section"><h3>Customer information</h3><div class="form-grid"><label>Full Name<input required name="name" autocomplete="name"></label><label>WhatsApp Number<input required name="phone" inputmode="tel"></label><label>Email Address<input required name="email" type="email" autocomplete="email"></label></div></div>
+    <div class="form-section"><h3>Order type</h3><div class="segmented"><label><input type="radio" name="orderType" value="delivery" checked> <span>Delivery</span></label><label><input type="radio" name="orderType" value="pickup"> <span>Store Pickup</span></label></div>
+      <div id="deliveryFields" class="form-grid"><label class="wide">Delivery Address<textarea name="address" rows="2"></textarea></label><label>City<input name="city" value="Jakarta"></label><label>Postal Code<input name="postal"></label><label class="wide">Delivery Notes<textarea name="deliveryNotes" rows="2"></textarea></label></div>
+      <div id="pickupFields" class="form-grid" hidden><label>Pickup time<select name="pickupTime"><option>08.00–10.00</option><option>10.00–12.00</option><option>12.00–15.00</option><option>15.00–18.00</option><option>18.00–20.00</option></select></label></div>
+    </div>
+    <div class="form-section"><h3>Preferred date & time</h3><div class="form-grid"><label>Date<input required name="date" type="date"></label><label>Time<select name="time"><option>09.00</option><option>11.00</option><option>13.00</option><option>15.00</option><option>17.00</option><option>19.00</option></select></label></div></div>
+    <div class="form-section"><h3>Special request</h3><textarea name="special" rows="3" placeholder="Any special notes for your order?"></textarea><small>Example: “Please write a birthday message on the cake.”</small></div>
+    <div class="form-section"><h3>Payment</h3><div class="payment-options"><label><input type="radio" name="payment" value="QRIS" checked> <span>QRIS</span></label><label><input type="radio" name="payment" value="Bank Transfer"> <span>Bank Transfer</span></label><label><input type="radio" name="payment" value="E-Wallet"> <span>E-Wallet</span></label></div></div>
+    <div class="review-box" id="checkoutSummary"></div>
+    <label class="agree"><input type="checkbox" required> I have checked my order details and agree to the ordering terms.</label>
+    <button class="btn dark full" type="submit">Place Order</button>
+  </form>
+</div></div>
+
+<!-- Success -->
+<div class="modal" id="successModal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-card success-card">
+  <div class="success-icon">TB</div><p class="eyebrow">Order received</p><h2>Thank you for your order.</h2><p>Your sweet little order is on its way to being baked.</p>
+  <div id="successDetails" class="success-details"></div>
+  <div class="success-actions"><button class="btn dark" id="trackBtn">Track My Order</button><button class="btn outline" id="continueBtn">Continue Shopping</button><button class="btn wa" id="successWa">Order via WhatsApp ↗</button></div>
+</div></div>
+
+<script>window.BUTTER_PRODUCTS = [
+  {
+    "id": "butter-croissant",
+    "name": "Butter Croissant",
+    "cat": "Pastries",
+    "sub": "Pastries",
+    "price": 28000,
+    "desc": "Flaky, golden layers with a rich buttery center.",
+    "img": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "cinnamon-roll",
+    "name": "Cinnamon Morning Roll",
+    "cat": "Pastries",
+    "sub": "Pastries",
+    "price": 32000,
+    "desc": "Soft laminated pastry with cinnamon sugar and vanilla glaze.",
+    "img": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "pistachio-eclair",
+    "name": "Pistachio Cream Éclair",
+    "cat": "Pastries",
+    "sub": "Pastries",
+    "price": 38000,
+    "desc": "Choux pastry filled with pistachio cream and topped with delicate glaze.",
+    "img": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "hazelnut-cookie",
+    "name": "Chocolate Hazelnut Cookie",
+    "cat": "Cookies",
+    "sub": "Cookies",
+    "price": 30000,
+    "desc": "Thick chocolate cookie with roasted hazelnuts.",
+    "img": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "double-chocolate",
+    "name": "Double Chocolate Chunk Cookie",
+    "cat": "Cookies",
+    "sub": "Cookies",
+    "price": 28000,
+    "desc": "Soft-centered chocolate cookie with generous chocolate chunks.",
+    "img": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "brown-butter-cookie",
+    "name": "Brown Butter Sea Salt Cookie",
+    "cat": "Cookies",
+    "sub": "Cookies",
+    "price": 30000,
+    "desc": "Nutty brown-butter cookie finished with a touch of sea salt.",
+    "img": "https://images.unsplash.com/photo-1598373182133-52452f7691ef?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "strawberry-tart",
+    "name": "Strawberry Cream Tart",
+    "cat": "Cakes",
+    "sub": "Tarts",
+    "price": 48000,
+    "desc": "Vanilla pastry cream, fresh strawberries, and a buttery tart shell.",
+    "img": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "vanilla-berry-cake",
+    "name": "Vanilla Berry Cake",
+    "cat": "Cakes",
+    "sub": "Cakes",
+    "price": 65000,
+    "desc": "Soft vanilla sponge layered with berry compote and cream.",
+    "img": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "caramel-pecan-tart",
+    "name": "Caramel Pecan Tart",
+    "cat": "Tarts",
+    "sub": "Tarts",
+    "price": 52000,
+    "desc": "Buttery tart filled with caramel and toasted pecans.",
+    "img": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "basque-cheesecake",
+    "name": "Classic Basque Cheesecake",
+    "cat": "Cakes",
+    "sub": "Cakes",
+    "price": 45000,
+    "desc": "Creamy cheesecake with a deeply caramelized top.",
+    "img": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "madeleine",
+    "name": "Honey Madeleine",
+    "cat": "Cookies",
+    "sub": "Cookies",
+    "price": 25000,
+    "desc": "Soft French-style madeleines with floral honey notes. 3 pcs.",
+    "img": "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "financier",
+    "name": "Brown Butter Financier",
+    "cat": "Cookies",
+    "sub": "Cookies",
+    "price": 27000,
+    "desc": "Small almond cakes with rich brown-butter flavor. 3 pcs.",
+    "img": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "buttercream-latte",
+    "name": "Buttercream Latte",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 38000,
+    "desc": "Espresso, steamed milk, and house-made buttercream foam with a creamy, slightly sweet finish.",
+    "img": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "vanilla-bean-latte",
+    "name": "Vanilla Bean Latte",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 38000,
+    "desc": "Espresso with steamed milk and vanilla bean syrup.",
+    "img": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "brown-sugar-oat",
+    "name": "Brown Sugar Oat Latte",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 42000,
+    "desc": "Espresso, oat milk, and brown sugar with a soft caramel aroma.",
+    "img": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "cappuccino",
+    "name": "Classic Cappuccino",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 35000,
+    "desc": "Double espresso with steamed milk and silky milk foam.",
+    "img": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "honey-cinnamon-latte",
+    "name": "Honey Cinnamon Latte",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 40000,
+    "desc": "Espresso, steamed milk, honey, and a little cinnamon.",
+    "img": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "iced-vanilla-cloud",
+    "name": "Iced Vanilla Cloud",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 40000,
+    "desc": "Iced espresso, vanilla milk, and creamy cold foam.",
+    "img": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "iced-caramel-latte",
+    "name": "Iced Caramel Latte",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 40000,
+    "desc": "Espresso, fresh milk, caramel, and ice.",
+    "img": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "iced-mocha",
+    "name": "Iced Mocha",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 42000,
+    "desc": "Espresso, chocolate sauce, fresh milk, and ice.",
+    "img": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "cold-brew",
+    "name": "Cold Brew",
+    "cat": "Drinks",
+    "sub": "Coffee",
+    "price": 35000,
+    "desc": "Slow-steeped cold brew with a smooth, refreshing finish.",
+    "img": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "strawberry-cream-milk",
+    "name": "Strawberry Cream Milk",
+    "cat": "Drinks",
+    "sub": "Non-Coffee",
+    "price": 38000,
+    "desc": "Fresh strawberry sauce, creamy milk, and light vanilla foam.",
+    "img": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "honey-matcha",
+    "name": "Honey Matcha Latte",
+    "cat": "Drinks",
+    "sub": "Non-Coffee",
+    "price": 42000,
+    "desc": "Premium matcha, fresh milk, and honey.",
+    "img": "https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "chocolate-cloud",
+    "name": "Chocolate Cloud",
+    "cat": "Drinks",
+    "sub": "Non-Coffee",
+    "price": 40000,
+    "desc": "Rich chocolate milk with creamy foam.",
+    "img": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "vanilla-chai",
+    "name": "Vanilla Chai",
+    "cat": "Drinks",
+    "sub": "Non-Coffee",
+    "price": 40000,
+    "desc": "Spiced chai, steamed milk, and vanilla.",
+    "img": "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "earl-grey-milk-tea",
+    "name": "Earl Grey Milk Tea",
+    "cat": "Drinks",
+    "sub": "Tea",
+    "price": 35000,
+    "desc": "Earl Grey tea with creamy milk and subtle vanilla notes.",
+    "img": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "honey-lemon-tea",
+    "name": "Honey Lemon Tea",
+    "cat": "Drinks",
+    "sub": "Tea",
+    "price": 32000,
+    "desc": "Black tea, honey, and fresh lemon.",
+    "img": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  },
+  {
+    "id": "strawberry-iced-tea",
+    "name": "Strawberry Iced Tea",
+    "cat": "Drinks",
+    "sub": "Tea",
+    "price": 35000,
+    "desc": "Refreshing iced tea with strawberry infusion.",
+    "img": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=1200&q=85",
+    "drink": true
+  }
+];</script>
+<script src="script.js"></script>
+</body></html>
